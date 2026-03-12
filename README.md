@@ -194,10 +194,6 @@ Provide direct user control over latent dimensions (`Dim0` to `Dim15`) to genera
 ### Example Generated Design
 ![Custom Sneaker Example](artifacts/generated/custom_sneaker.png)
 
-### Demo Notes
-**[Content to be added here.]**
-
----
 
 ## Project Conclusion
 
@@ -205,5 +201,9 @@ Provide direct user control over latent dimensions (`Dim0` to `Dim15`) to genera
 - Model is trained, analyzed, and deployed to a live interactive website.
 - The system supports both research-style latent inspection and practical controllable design generation.
 
-### Final Reflection
-**[Content to be added here.]**
+
+## Future Optimizations & Outlook
+While this project successfully demonstrates a controllable generative pipeline, there are several exciting avenues for future improvement:
+
+* **Scaling to High-Resolution Generation:** Due to current computational constraints, our training pipeline and latent space are optimized for 64x64 images. With access to greater compute resources, a primary next step is upgrading the architecture (e.g., using deeper convolutional layers or exploring VQ-VAE architectures) to generate sharp, high-fidelity sneaker concepts at 256x256 or higher resolutions.
+* **Category-Specific Latent Spaces:** Currently, the model learns a generalized latent space for all sneakers. Future iterations could involve training specialized, dedicated models tailored to distinct footwear categories—such as running shoes, basketball sneakers, and casual wear. This would allow the models to capture fine-grained, category-specific details and textures that might get smoothed out in a single, generalized dataset.
